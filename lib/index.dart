@@ -4,20 +4,15 @@ export '/pages/sign_up_page/sign_up_page_widget.dart' show SignUpPageWidget;
 export '/pages/forgot_password/forgot_password_widget.dart'
     show ForgotPasswordWidget;
 export '/pages/review_page/review_page_widget.dart' show ReviewPageWidget;
-export '/pages/profile_page/profile_page_widget.dart' show ProfilePageWidget;
 export '/pages/change_password/change_password_widget.dart'
     show ChangePasswordWidget;
 export '/pages/editprofile_page/editprofile_page_widget.dart'
     show EditprofilePageWidget;
 export '/pages/post_form_page/post_form_page_widget.dart'
     show PostFormPageWidget;
-export '/pages/category_page/category_page_widget.dart' show CategoryPageWidget;
 export '/pages/edit_form/edit_form_widget.dart' show EditFormWidget;
 export '/pages/usern_review_management_page/usern_review_management_page_widget.dart'
     show UsernReviewManagementPageWidget;
-export '/pages/smartphone_page/smartphone_page_widget.dart'
-    show SmartphonePageWidget;
-export '/pages/consoles_page/consoles_page_widget.dart' show ConsolesPageWidget;
 export '/pages/accessories_page/accessories_page_widget.dart'
     show AccessoriesPageWidget;
 export '/pages/desktopsn_laptops_page/desktopsn_laptops_page_widget.dart'
@@ -27,3 +22,10 @@ export '/pages/top_rated_page/top_rated_page_widget.dart'
 export '/pages/latest_release_page/latest_release_page_widget.dart'
     show LatestReleasePageWidget;
 export '/pages/wishlist_page/wishlist_page_widget.dart' show WishlistPageWidget;
+export '/pages/compare_page/compare_page_widget.dart' show ComparePageWidget;
+export '/pages/consoles_page/consoles_page_widget.dart' show ConsolesPageWidget;
+export '/pages/smartphone_page/smartphone_page_widget.dart'
+    show SmartphonePageWidget;
+export '/pages/search_page/search_page_widget.dart' show SearchPageWidget;
+export '/pages/laptop_page/laptop_page_widget.dart' show LaptopPageWidget;
+export '/pages/profile_page/profile_page_widget.dart' show ProfilePageWidget;

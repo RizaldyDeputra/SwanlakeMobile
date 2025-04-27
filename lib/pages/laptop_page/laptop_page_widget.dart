@@ -7,22 +7,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'accessories_page_model.dart';
-export 'accessories_page_model.dart';
+import 'laptop_page_model.dart';
+export 'laptop_page_model.dart';
 
-class AccessoriesPageWidget extends StatefulWidget {
-  const AccessoriesPageWidget({super.key});
+class LaptopPageWidget extends StatefulWidget {
+  const LaptopPageWidget({super.key});
 
-  static String routeName = 'AccessoriesPage';
-  static String routePath = '/accessoriesPage';
+  static String routeName = 'LaptopPage';
+  static String routePath = '/laptopPage';
 
   @override
-  State<AccessoriesPageWidget> createState() => _AccessoriesPageWidgetState();
+  State<LaptopPageWidget> createState() => _LaptopPageWidgetState();
 }
 
-class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
+class _LaptopPageWidgetState extends State<LaptopPageWidget>
     with TickerProviderStateMixin {
-  late AccessoriesPageModel _model;
+  late LaptopPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -31,7 +31,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => AccessoriesPageModel());
+    _model = createModel(context, () => LaptopPageModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation': AnimationInfo(
@@ -182,7 +182,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
             },
           ),
           title: Text(
-            'Accessories',
+            'Laptop',
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.interTight(
                     fontWeight:
@@ -245,7 +245,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(12.0),
                                   child: Image.network(
-                                    'https://els.id/wp-content/uploads/2023/09/Logitech-G102-White.png',
+                                    'https://cdn.antaranews.com/cache/1200x800/2023/01/18/macbook-pro-m2-m2-max.jpg',
                                     width: double.infinity,
                                     height: 200.0,
                                     fit: BoxFit.cover,
@@ -260,7 +260,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        'New Release',
+                                        'Macbook Pro M2',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
@@ -306,7 +306,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                             ),
                                             direction: Axis.horizontal,
                                             initialRating:
-                                                _model.ratingBarValue1 ??= 1.0,
+                                                _model.ratingBarValue1 ??= 5.0,
                                             unratedColor:
                                                 FlutterFlowTheme.of(context)
                                                     .alternate,
@@ -422,7 +422,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://imgx.brdcdn.com/imgx/500/aW1hZ2VzLnRva29wZWRpYS5uZXQvaW1nL2NhY2hlLzcwMC9WcWJjbU0vMjAyMS82LzE1LzYxYWFkYzdkLThiYjUtNDI0ZC1iMDQ4LTJhMjUxM2Y4NzJmNA==.jpg',
+                                    'https://dlcdnwebimgs.asus.com/gain/3D241166-0518-4745-B481-D901886BFD14',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.contain,
@@ -440,7 +440,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Logitech H110 Stereo',
+                                          'ROG Zephyrus',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -488,7 +488,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                               ),
                                               direction: Axis.horizontal,
                                               initialRating: _model
-                                                  .ratingBarValue2 ??= 5.0,
+                                                  .ratingBarValue2 ??= 4.5,
                                               unratedColor:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
@@ -579,7 +579,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://els.id/wp-content/uploads/2024/08/Gamen-Titan-VI-3.jpg',
+                                    'https://press.razer.com/wp-content/uploads/2025/01/Blade16_KV.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.fitWidth,
@@ -597,7 +597,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Keyboard Gaming Gamen Titan VI',
+                                          'Razer Blade 16',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -645,7 +645,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                               ),
                                               direction: Axis.horizontal,
                                               initialRating: _model
-                                                  .ratingBarValue3 ??= 5.0,
+                                                  .ratingBarValue3 ??= 4.0,
                                               unratedColor:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
@@ -772,7 +772,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/9/17/3ad19691-68bc-40a5-9407-78c34aae0dcc.jpg.webp?ect=4g',
+                                    'https://www.softcom.co.id/wp-content/uploads/2024/03/83DG000AID-4.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -790,7 +790,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Wooting 60HE ',
+                                          'Lenovo Legion 5',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -838,7 +838,7 @@ class _AccessoriesPageWidgetState extends State<AccessoriesPageWidget>
                                               ),
                                               direction: Axis.horizontal,
                                               initialRating: _model
-                                                  .ratingBarValue4 ??= 5.0,
+                                                  .ratingBarValue4 ??= 4.5,
                                               unratedColor:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,

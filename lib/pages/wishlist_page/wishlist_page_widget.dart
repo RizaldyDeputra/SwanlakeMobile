@@ -283,7 +283,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/cf6886fd-72b6-4a08-a3a8-bb5a92508fd0/air-max-270-mens-shoes-KkLcGR.png',
+                                    'https://asset.kompas.com/crops/Qk2LpNDkPkDXwltCIHlc4ysCanw=/157x101:1043x691/1200x800/data/photo/2025/04/07/67f384ceecdc7.png',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -367,30 +367,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                     ),
                                   ),
                                 ),
-                                Text(
-                                  '\$126.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
-                                ),
                               ],
                             ),
                           ),
@@ -426,7 +402,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/wzitsrb4oucx9jukxsmc/air-max-90-mens-shoes-6n3vKB.png',
+                                    'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-176164072/samsung_samsung_galaxy_z_flip_6_12-512gb_garansi_resmi_sein_full04_rj1vba9o.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -444,7 +420,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Nike Airmax 90',
+                                          'New Release',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -509,30 +485,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$222.50',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -581,7 +533,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/f66a08b9-211c-43fe-a0cc-d04a732bdc63/air-force-1-07-mens-shoes-L3SMQl.png',
+                                    'https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/75/2024/12/17/Nintendo-Switch-2-POPLINEID-1813297203.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -599,7 +551,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Air Force 1',
+                                          'New Release',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -664,30 +616,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$552.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -724,7 +652,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/4b155760-7f13-4feb-8200-c5ec59a1166f/lebron-19-basketball-shoes-VkqHgW.png',
+                                    'https://cworld.id/wp-content/uploads/2024/07/fd6210799db730881078cecb029b4afb.jpeg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -742,7 +670,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Lebron 19',
+                                          'New Release',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -807,30 +735,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$59.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),

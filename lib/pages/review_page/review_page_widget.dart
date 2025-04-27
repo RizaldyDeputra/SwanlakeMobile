@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
@@ -210,23 +209,6 @@ class _ReviewPageWidgetState extends State<ReviewPageWidget> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          ToggleIcon(
-                                            onPressed: () async {},
-                                            onIcon: Icon(
-                                              Icons.favorite_border,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              size: 24.0,
-                                            ),
-                                            offIcon: Icon(
-                                              Icons.favorite_border,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              size: 24.0,
-                                            ),
-                                          ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -265,6 +247,17 @@ class _ReviewPageWidgetState extends State<ReviewPageWidget> {
                                                                 .bodyMedium
                                                                 .fontStyle,
                                                       ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional(1.0, 0.0),
+                                            child: Icon(
+                                              Icons.favorite_border,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              size: 24.0,
                                             ),
                                           ),
                                         ],

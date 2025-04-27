@@ -908,17 +908,7 @@ class _SignUpPageWidgetState extends State<SignUpPageWidget>
                                                                   0.0,
                                                                   16.0),
                                                       child: FFButtonWidget(
-                                                        onPressed: () async {
-                                                          GoRouter.of(context)
-                                                              .prepareAuthEvent();
-                                                          authManager
-                                                              .updateAuthUserData();
-
-                                                          context.goNamedAuth(
-                                                              HomePageWidget
-                                                                  .routeName,
-                                                              context.mounted);
-                                                        },
+                                                        onPressed: () async {},
                                                         text: 'Get Started',
                                                         options:
                                                             FFButtonOptions(

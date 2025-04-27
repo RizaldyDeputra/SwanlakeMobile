@@ -472,42 +472,8 @@ class _EditProfileWidgetState extends State<EditProfileWidget>
                         Align(
                           alignment: AlignmentDirectional(0.0, 0.05),
                           child: FFButtonWidget(
-                            onPressed: () async {
-                              context.pop();
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(
-                                    'You successfully updated your profile information!',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          font: GoogleFonts.inter(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                          color: Colors.white,
-                                          letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                  ),
-                                  duration: Duration(milliseconds: 4000),
-                                  backgroundColor:
-                                      FlutterFlowTheme.of(context).secondary,
-                                ),
-                              );
+                            onPressed: () {
+                              print('Button pressed ...');
                             },
                             text: 'Save Changes',
                             options: FFButtonOptions(

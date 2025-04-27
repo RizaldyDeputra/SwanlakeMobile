@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '/auth/custom_auth/custom_auth_user_provider.dart';
 
+import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -76,18 +77,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : SignUpPageWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : SignUpPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : SignUpPageWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : SignUpPageWidget(),
         ),
         FFRoute(
           name: HomePageWidget.routeName,
           path: HomePageWidget.routePath,
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'HomePage')
+              : HomePageWidget(),
         ),
         FFRoute(
           name: SignUpPageWidget.routeName,
@@ -105,11 +108,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ReviewPageWidget(),
         ),
         FFRoute(
-          name: ProfilePageWidget.routeName,
-          path: ProfilePageWidget.routePath,
-          builder: (context, params) => ProfilePageWidget(),
-        ),
-        FFRoute(
           name: ChangePasswordWidget.routeName,
           path: ChangePasswordWidget.routePath,
           builder: (context, params) => ChangePasswordWidget(),
@@ -125,11 +123,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => PostFormPageWidget(),
         ),
         FFRoute(
-          name: CategoryPageWidget.routeName,
-          path: CategoryPageWidget.routePath,
-          builder: (context, params) => CategoryPageWidget(),
-        ),
-        FFRoute(
           name: EditFormWidget.routeName,
           path: EditFormWidget.routePath,
           builder: (context, params) => EditFormWidget(),
@@ -138,16 +131,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: UsernReviewManagementPageWidget.routeName,
           path: UsernReviewManagementPageWidget.routePath,
           builder: (context, params) => UsernReviewManagementPageWidget(),
-        ),
-        FFRoute(
-          name: SmartphonePageWidget.routeName,
-          path: SmartphonePageWidget.routePath,
-          builder: (context, params) => SmartphonePageWidget(),
-        ),
-        FFRoute(
-          name: ConsolesPageWidget.routeName,
-          path: ConsolesPageWidget.routePath,
-          builder: (context, params) => ConsolesPageWidget(),
         ),
         FFRoute(
           name: AccessoriesPageWidget.routeName,
@@ -173,6 +156,40 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: WishlistPageWidget.routeName,
           path: WishlistPageWidget.routePath,
           builder: (context, params) => WishlistPageWidget(),
+        ),
+        FFRoute(
+          name: ComparePageWidget.routeName,
+          path: ComparePageWidget.routePath,
+          builder: (context, params) => ComparePageWidget(),
+        ),
+        FFRoute(
+          name: ConsolesPageWidget.routeName,
+          path: ConsolesPageWidget.routePath,
+          builder: (context, params) => ConsolesPageWidget(),
+        ),
+        FFRoute(
+          name: SmartphonePageWidget.routeName,
+          path: SmartphonePageWidget.routePath,
+          builder: (context, params) => SmartphonePageWidget(),
+        ),
+        FFRoute(
+          name: SearchPageWidget.routeName,
+          path: SearchPageWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'SearchPage')
+              : SearchPageWidget(),
+        ),
+        FFRoute(
+          name: LaptopPageWidget.routeName,
+          path: LaptopPageWidget.routePath,
+          builder: (context, params) => LaptopPageWidget(),
+        ),
+        FFRoute(
+          name: ProfilePageWidget.routeName,
+          path: ProfilePageWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'ProfilePage')
+              : ProfilePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'accessories_page_widget.dart' show AccessoriesPageWidget;
+import 'laptop_page_widget.dart' show LaptopPageWidget;
 import 'package:flutter/material.dart';
 
-class AccessoriesPageModel extends FlutterFlowModel<AccessoriesPageWidget> {
+class LaptopPageModel extends FlutterFlowModel<LaptopPageWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for RatingBar widget.

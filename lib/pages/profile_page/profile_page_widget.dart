@@ -386,6 +386,84 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
           Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.pushNamed(EditprofilePageWidget.routeName);
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 60.0,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5.0,
+                          color: Color(0x3416202A),
+                          offset: Offset(
+                            0.0,
+                            2.0,
+                          ),
+                        )
+                      ],
+                      borderRadius: BorderRadius.circular(12.0),
+                      shape: BoxShape.rectangle,
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                12.0, 0.0, 0.0, 0.0),
+                            child: Text(
+                              'My Wishlist',
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Align(
+                              alignment: AlignmentDirectional(0.9, 0.0),
+                              child: Icon(
+                                Icons.arrow_forward_ios,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 18.0,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -461,6 +539,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                         .labelMedium
                                         .fontStyle,
                                   ),
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -535,6 +615,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           .labelMedium
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -581,22 +663,23 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        textStyle:
-                            FlutterFlowTheme.of(context).bodySmall.override(
-                                  font: GoogleFonts.lexendDeca(
-                                    fontWeight: FontWeight.normal,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .fontStyle,
-                                  ),
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  fontSize: 14.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.normal,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .bodySmall
-                                      .fontStyle,
-                                ),
+                        textStyle: FlutterFlowTheme.of(context)
+                            .bodySmall
+                            .override(
+                              font: GoogleFonts.lexendDeca(
+                                fontWeight: FontWeight.normal,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodySmall
+                                    .fontStyle,
+                              ),
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              fontSize: 14.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.normal,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodySmall
+                                  .fontStyle,
+                            ),
                         elevation: 1.0,
                         borderSide: BorderSide(
                           color: Colors.transparent,

@@ -1,4 +1,3 @@
-import '/auth/custom_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -488,22 +487,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                   padding:
                       EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () async {
-                      if (_model.emailAddresTextController.text.isEmpty) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'Email required!',
-                            ),
-                          ),
-                        );
-                        return;
-                      }
-                      await authManager.resetPassword(
-                        email: _model.emailAddresTextController.text,
-                        context: context,
-                      );
-                    },
+                    onPressed: () async {},
                     text: 'Confirm',
                     options: FFButtonOptions(
                       width: double.infinity,

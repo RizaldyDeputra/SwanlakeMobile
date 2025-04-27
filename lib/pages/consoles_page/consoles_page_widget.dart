@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'consoles_page_model.dart';
 export 'consoles_page_model.dart';
@@ -181,7 +182,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
             },
           ),
           title: Text(
-            'CONSOLES',
+            'Consoles',
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.interTight(
                     fontWeight:
@@ -244,7 +245,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(12.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7c5678f4-c28d-4862-a8d9-56750f839f12/zion-1-basketball-shoes-bJ0hLJ.png',
+                                    'https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?\$facebook\$',
                                     width: double.infinity,
                                     height: 200.0,
                                     fit: BoxFit.cover,
@@ -284,31 +285,38 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                                       .fontStyle,
                                             ),
                                       ),
-                                      Text(
-                                        '\$126.20',
-                                        style: FlutterFlowTheme.of(context)
-                                            .headlineSmall
-                                            .override(
-                                              font: GoogleFonts.interTight(
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmall
-                                                        .fontStyle,
-                                              ),
-                                              letterSpacing: 0.0,
-                                              fontWeight:
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(1.0, 1.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 12.0, 0.0, 0.0),
+                                          child: RatingBar.builder(
+                                            onRatingUpdate: (newValue) =>
+                                                safeSetState(() =>
+                                                    _model.ratingBarValue1 =
+                                                        newValue),
+                                            itemBuilder: (context, index) =>
+                                                Icon(
+                                              Icons.star_rounded,
+                                              color:
                                                   FlutterFlowTheme.of(context)
-                                                      .headlineSmall
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmall
-                                                      .fontStyle,
+                                                      .warning,
                                             ),
+                                            direction: Axis.horizontal,
+                                            initialRating:
+                                                _model.ratingBarValue1 ??= 5.0,
+                                            unratedColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .alternate,
+                                            itemCount: 5,
+                                            itemSize: 24.0,
+                                            glowColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .warning,
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -317,7 +325,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 5.0, 0.0, 0.0),
                                   child: Text(
-                                    'Ordered on Feb 15, 2022',
+                                    'Posted Feb 15, 2025',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -389,7 +397,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                             16.0, 0.0, 16.0, 8.0),
                         child: Container(
                           width: double.infinity,
-                          height: 80.0,
+                          height: 99.96,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -414,10 +422,10 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/cf6886fd-72b6-4a08-a3a8-bb5a92508fd0/air-max-270-mens-shoes-KkLcGR.png',
+                                    'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//105/MTA-68466732/no-brand_stick-ps5-stick-dualsesnse-5_full01.jpg',
                                     width: 80.0,
                                     height: 80.0,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.contain,
                                   ),
                                 ),
                                 Expanded(
@@ -432,7 +440,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'DualSense PS5',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -459,68 +467,82 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Feb 15, 2022',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  font: GoogleFonts.inter(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontStyle,
-                                                  ),
-                                                  letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontStyle,
-                                                ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
+                                            child: RatingBar.builder(
+                                              onRatingUpdate: (newValue) =>
+                                                  safeSetState(() =>
+                                                      _model.ratingBarValue2 =
+                                                          newValue),
+                                              itemBuilder: (context, index) =>
+                                                  Icon(
+                                                Icons.star_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .warning,
+                                              ),
+                                              direction: Axis.horizontal,
+                                              initialRating: _model
+                                                  .ratingBarValue2 ??= 4.5,
+                                              unratedColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              itemCount: 5,
+                                              itemSize: 24.0,
+                                              glowColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .warning,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 5.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Feb 15, 2025',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$126.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -532,7 +554,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                             16.0, 0.0, 16.0, 8.0),
                         child: Container(
                           width: double.infinity,
-                          height: 80.0,
+                          height: 112.66,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -557,10 +579,10 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/wzitsrb4oucx9jukxsmc/air-max-90-mens-shoes-6n3vKB.png',
+                                    'https://images.tokopedia.net/img/cache/700/OJWluG/2022/9/9/e0396014-7e74-4a6f-86e3-d44791aa7f53.jpg',
                                     width: 80.0,
                                     height: 80.0,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fitWidth,
                                   ),
                                 ),
                                 Expanded(
@@ -575,7 +597,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Nike Airmax 90',
+                                          'XBOX Series X',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -602,68 +624,82 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 5.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Feb 15, 2022',
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium
-                                                .override(
-                                                  font: GoogleFonts.inter(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontStyle,
-                                                  ),
-                                                  letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontStyle,
-                                                ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
+                                            child: RatingBar.builder(
+                                              onRatingUpdate: (newValue) =>
+                                                  safeSetState(() =>
+                                                      _model.ratingBarValue3 =
+                                                          newValue),
+                                              itemBuilder: (context, index) =>
+                                                  Icon(
+                                                Icons.star_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .warning,
+                                              ),
+                                              direction: Axis.horizontal,
+                                              initialRating: _model
+                                                  .ratingBarValue3 ??= 4.0,
+                                              unratedColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              itemCount: 5,
+                                              itemSize: 24.0,
+                                              glowColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .warning,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 5.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Feb 15, 2025',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$222.50',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -711,7 +747,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                             16.0, 0.0, 16.0, 8.0),
                         child: Container(
                           width: double.infinity,
-                          height: 80.0,
+                          height: 101.44,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -736,7 +772,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/f66a08b9-211c-43fe-a0cc-d04a732bdc63/air-force-1-07-mens-shoes-L3SMQl.png',
+                                    'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//97/MTA-34640286/nintendo_switch_nintendo_switch_-generation_2-_-neon_blue_-_neon_red-_full01_cojky2an.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -754,7 +790,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Air Force 1',
+                                          'Nintendo Switch 2',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -781,12 +817,45 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                                         .fontStyle,
                                               ),
                                         ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
+                                            child: RatingBar.builder(
+                                              onRatingUpdate: (newValue) =>
+                                                  safeSetState(() =>
+                                                      _model.ratingBarValue4 =
+                                                          newValue),
+                                              itemBuilder: (context, index) =>
+                                                  Icon(
+                                                Icons.star_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .warning,
+                                              ),
+                                              direction: Axis.horizontal,
+                                              initialRating: _model
+                                                  .ratingBarValue4 ??= 4.5,
+                                              unratedColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              itemCount: 5,
+                                              itemSize: 24.0,
+                                              glowColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .warning,
+                                            ),
+                                          ),
+                                        ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -819,30 +888,6 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$552.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -879,7 +924,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/4b155760-7f13-4feb-8200-c5ec59a1166f/lebron-19-basketball-shoes-VkqHgW.png',
+                                    'https://www.hellostore.id/cdn/shop/files/AirPods_Max_PDP_Image_Position_3__ID-ID.png?v=1744598434&width=1445',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -897,7 +942,7 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Lebron 19',
+                                          'AirPods Max 2024',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -924,12 +969,45 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                                         .fontStyle,
                                               ),
                                         ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 1.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 12.0, 0.0, 0.0),
+                                            child: RatingBar.builder(
+                                              onRatingUpdate: (newValue) =>
+                                                  safeSetState(() =>
+                                                      _model.ratingBarValue5 =
+                                                          newValue),
+                                              itemBuilder: (context, index) =>
+                                                  Icon(
+                                                Icons.star_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .warning,
+                                              ),
+                                              direction: Axis.horizontal,
+                                              initialRating: _model
+                                                  .ratingBarValue5 ??= 5.0,
+                                              unratedColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              itemCount: 5,
+                                              itemSize: 24.0,
+                                              glowColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .warning,
+                                            ),
+                                          ),
+                                        ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -962,30 +1040,6 @@ class _ConsolesPageWidgetState extends State<ConsolesPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$59.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),

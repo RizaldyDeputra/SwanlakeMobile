@@ -3656,14 +3656,7 @@ class _EditFormWidgetState extends State<EditFormWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 16.0, 12.0),
                                       child: FFButtonWidget(
-                                        onPressed: () async {
-                                          if (_model.formKey.currentState ==
-                                                  null ||
-                                              !_model.formKey.currentState!
-                                                  .validate()) {
-                                            return;
-                                          }
-                                        },
+                                        onPressed: () async {},
                                         text: 'Submit Form',
                                         options: FFButtonOptions(
                                           width: double.infinity,

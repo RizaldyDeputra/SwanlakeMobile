@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'category_page_widget.dart' show CategoryPageWidget;
+import 'compare_page_widget.dart' show ComparePageWidget;
 import 'package:flutter/material.dart';
 
-class CategoryPageModel extends FlutterFlowModel<CategoryPageWidget> {
+class ComparePageModel extends FlutterFlowModel<ComparePageWidget> {
   @override
   void initState(BuildContext context) {}
 

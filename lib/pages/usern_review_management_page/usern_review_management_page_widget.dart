@@ -1040,7 +1040,7 @@ class _UsernReviewManagementPageWidgetState
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 0.0, 4.0),
                             child: Text(
-                              'Members',
+                              'Admin Dashborad',
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
@@ -1066,7 +1066,7 @@ class _UsernReviewManagementPageWidgetState
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Below are a list of members of your team.',
+                              'Below are a list of members and reviews',
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(

@@ -14,7 +14,7 @@ export 'compare_page_model.dart';
 class ComparePageWidget extends StatefulWidget {
   const ComparePageWidget({super.key});
 
-  static String routeName = 'comparePage';
+  static String routeName = 'ComparePage';
   static String routePath = '/comparePage';
 
   @override
@@ -96,7 +96,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
               size: 30.0,
             ),
             onPressed: () async {
-              context.pop();
+              context.safePop();
             },
           ),
           title: Text(
@@ -355,7 +355,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                 ),
                           ),
                           yAxisLabelInfo: AxisLabelInfo(
-                            title: 'Avg. Grade',
+                            title: 'Price',
                             titleTextStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -412,7 +412,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 0.0, 4.0),
                           child: Text(
-                            'Product',
+                            'Spesifications',
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
@@ -478,7 +478,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
+                                                      .accent1,
                                               borderRadius:
                                                   BorderRadius.circular(4.0),
                                             ),
@@ -502,31 +502,31 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                     'Iphone 13 Pro Max ',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodySmall
+                                                        .bodyLarge
                                                         .override(
                                                           font:
                                                               GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmall
+                                                                    .bodyLarge
                                                                     .fontWeight,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmall
+                                                                    .bodyLarge
                                                                     .fontStyle,
                                                           ),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodySmall
+                                                                  .bodyLarge
                                                                   .fontWeight,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodySmall
+                                                                  .bodyLarge
                                                                   .fontStyle,
                                                         ),
                                                   ),
@@ -535,30 +535,30 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                   'Task Description here this one is really long and it goes over maybe? And goes to two lines.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyMedium
+                                                      .bodySmall
                                                       .override(
                                                         font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyMedium
+                                                                  .bodySmall
                                                                   .fontWeight,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyMedium
+                                                                  .bodySmall
                                                                   .fontStyle,
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMedium
+                                                                .bodySmall
                                                                 .fontWeight,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMedium
+                                                                .bodySmall
                                                                 .fontStyle,
                                                       ),
                                                 ),
@@ -597,8 +597,9 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Colors
-                                                                      .white,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight: FlutterFlowTheme.of(
@@ -639,7 +640,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                         0.0,
                                                                         0.0),
                                                             child: Text(
-                                                              'Top Rated',
+                                                              'Processor',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -657,7 +658,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                     ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primary,
+                                                                        .primaryText,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
@@ -721,7 +722,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
+                                                      .accent1,
                                               borderRadius:
                                                   BorderRadius.circular(4.0),
                                             ),
@@ -745,31 +746,31 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                     'Iphone 13 Pro',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodySmall
+                                                        .bodyLarge
                                                         .override(
                                                           font:
                                                               GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmall
+                                                                    .bodyLarge
                                                                     .fontWeight,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodySmall
+                                                                    .bodyLarge
                                                                     .fontStyle,
                                                           ),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodySmall
+                                                                  .bodyLarge
                                                                   .fontWeight,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodySmall
+                                                                  .bodyLarge
                                                                   .fontStyle,
                                                         ),
                                                   ),
@@ -778,30 +779,30 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                   'Task Description here this one is really long and it goes over maybe? And goes to two lines.',
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyMedium
+                                                      .bodySmall
                                                       .override(
                                                         font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyMedium
+                                                                  .bodySmall
                                                                   .fontWeight,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyMedium
+                                                                  .bodySmall
                                                                   .fontStyle,
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMedium
+                                                                .bodySmall
                                                                 .fontWeight,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyMedium
+                                                                .bodySmall
                                                                 .fontStyle,
                                                       ),
                                                 ),
@@ -840,8 +841,9 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Colors
-                                                                      .white,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight: FlutterFlowTheme.of(
@@ -882,7 +884,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                         0.0,
                                                                         0.0),
                                                             child: Text(
-                                                              'Top Rated',
+                                                              'Processor',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium
@@ -900,7 +902,7 @@ class _ComparePageWidgetState extends State<ComparePageWidget>
                                                                     ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primary,
+                                                                        .primaryText,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight: FlutterFlowTheme.of(

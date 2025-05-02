@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'consoles_page_widget.dart' show ConsolesPageWidget;
 import 'package:flutter/material.dart';
 

@@ -146,7 +146,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 .labelMedium
                                 .fontStyle,
                           ),
-                          color: FlutterFlowTheme.of(context).secondaryText,
+                          color: FlutterFlowTheme.of(context).primaryText,
                           letterSpacing: 0.0,
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
@@ -294,8 +294,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            context.pushNamed(
-                                DesktopsnLaptopsPageWidget.routeName);
+                            context
+                                .pushNamed(DesktopsnLaptopPageWidget.routeName);
                           },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),

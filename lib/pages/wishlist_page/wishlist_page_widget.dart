@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -48,25 +47,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
             delay: 0.0.ms,
             duration: 600.0.ms,
             begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
-      'textOnPageLoadAnimation': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 60.0),
             end: Offset(0.0, 0.0),
           ),
         ],
@@ -149,16 +129,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(
-                ProfilePageWidget.routeName,
-                extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
-                    hasTransition: true,
-                    transitionType: PageTransitionType.rightToLeft,
-                    duration: Duration(milliseconds: 220),
-                  ),
-                },
-              );
+              context.safePop();
             },
           ),
           title: Text(
@@ -222,30 +193,6 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
-                  child: Text(
-                    'Top Rated',
-                    style: FlutterFlowTheme.of(context).labelMedium.override(
-                          font: GoogleFonts.inter(
-                            fontWeight: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .fontWeight,
-                            fontStyle: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .fontStyle,
-                          ),
-                          letterSpacing: 0.0,
-                          fontWeight: FlutterFlowTheme.of(context)
-                              .labelMedium
-                              .fontWeight,
-                          fontStyle: FlutterFlowTheme.of(context)
-                              .labelMedium
-                              .fontStyle,
-                        ),
-                  ).animateOnPageLoad(
-                      animationsMap['textOnPageLoadAnimation']!),
-                ),
-                Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: ListView(
                     padding: EdgeInsets.zero,
@@ -301,7 +248,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'iPhone 17',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -420,7 +367,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'Samsung Flip',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -551,7 +498,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'Nintendo Switch',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -670,7 +617,7 @@ class _WishlistPageWidgetState extends State<WishlistPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'Sony WH-1000XM5',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(

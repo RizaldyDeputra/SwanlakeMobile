@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/flutter_flow/random_data_util.dart' as random_data;
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -305,8 +306,17 @@ class _EditprofilePageWidgetState extends State<EditprofilePageWidget> {
                       ),
                       options: List<String>.from(['Option 1', '1']),
                       optionLabels: ['Admin', 'User'],
-                      onChanged: (val) =>
-                          safeSetState(() => _model.dropDownValue = val),
+                      onChanged: (val) async {
+                        safeSetState(() => _model.dropDownValue = val);
+                        if (random_data.randomName(true, true) == 'Admin') {
+                          context.pushNamed(
+                              UsernReviewManagementPageWidget.routeName);
+
+                          return;
+                        } else {
+                          return;
+                        }
+                      },
                       width: double.infinity,
                       height: 58.0,
                       textStyle:
@@ -358,7 +368,7 @@ class _EditprofilePageWidgetState extends State<EditprofilePageWidget> {
                       alignment: AlignmentDirectional(0.0, 0.05),
                       child: FFButtonWidget(
                         onPressed: () async {
-                          context.goNamed(ProfilePageWidget.routeName);
+                          context.safePop();
                         },
                         text: 'Cancel',
                         options: FFButtonOptions(
@@ -407,8 +417,24 @@ class _EditprofilePageWidgetState extends State<EditprofilePageWidget> {
                     Align(
                       alignment: AlignmentDirectional(0.0, 0.05),
                       child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          Navigator.pop(context);
+                          await showDialog(
+                            context: context,
+                            builder: (alertDialogContext) {
+                              return AlertDialog(
+                                title: Text('Changes Saved Successfully'),
+                                content: Text('Your changes have been saved'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.pop(alertDialogContext),
+                                    child: Text('Ok'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
                         },
                         text: 'Save Changes',
                         options: FFButtonOptions(

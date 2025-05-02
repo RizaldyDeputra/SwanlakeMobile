@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'wishlist_page_widget.dart' show WishlistPageWidget;
 import 'package:flutter/material.dart';
 

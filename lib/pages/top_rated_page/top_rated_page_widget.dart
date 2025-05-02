@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -149,16 +148,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(
-                HomePageWidget.routeName,
-                extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
-                    hasTransition: true,
-                    transitionType: PageTransitionType.rightToLeft,
-                    duration: Duration(milliseconds: 220),
-                  ),
-                },
-              );
+              context.safePop();
             },
           ),
           title: Text(
@@ -225,7 +215,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(12.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7c5678f4-c28d-4862-a8d9-56750f839f12/zion-1-basketball-shoes-bJ0hLJ.png',
+                                    'https://ibox.co.id/_next/image?url=https%3A%2F%2Fcdnpro.eraspace.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fa%2Fmacbook_pro_14-inch_m3_space_grey_1_1.jpg&w=3840&q=45',
                                     width: double.infinity,
                                     height: 200.0,
                                     fit: BoxFit.cover,
@@ -240,7 +230,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        'New Release',
+                                        'Macbook Pro M2',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
@@ -265,32 +255,6 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                                       .fontStyle,
                                             ),
                                       ),
-                                      Text(
-                                        '\$126.20',
-                                        style: FlutterFlowTheme.of(context)
-                                            .headlineSmall
-                                            .override(
-                                              font: GoogleFonts.interTight(
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmall
-                                                        .fontStyle,
-                                              ),
-                                              letterSpacing: 0.0,
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmall
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmall
-                                                      .fontStyle,
-                                            ),
-                                      ),
                                     ],
                                   ),
                                 ),
@@ -298,7 +262,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 5.0, 0.0, 0.0),
                                   child: Text(
-                                    'Ordered on Feb 15, 2022',
+                                    'Ordered on Feb 15, 2025',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -395,7 +359,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/cf6886fd-72b6-4a08-a3a8-bb5a92508fd0/air-max-270-mens-shoes-KkLcGR.png',
+                                    'https://images.samsung.com/is/image/samsung/p6pim/id/2501/gallery/id-galaxy-s25-s938-sm-s938bzbcxid-thumb-544701608?\$UX_EXT2_PNG\$',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -413,7 +377,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'New Release',
+                                          'Samsung S15',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -445,7 +409,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -478,30 +442,6 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$126.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -538,7 +478,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/wzitsrb4oucx9jukxsmc/air-max-90-mens-shoes-6n3vKB.png',
+                                    'https://www.softcom.co.id/wp-content/uploads/2024/03/83DG000AID-4.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -588,7 +528,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -621,30 +561,6 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$222.50',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -693,7 +609,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/f66a08b9-211c-43fe-a0cc-d04a732bdc63/air-force-1-07-mens-shoes-L3SMQl.png',
+                                    'https://images.tokopedia.net/img/cache/700/VqbcmM/2022/8/24/e156cb43-47ad-425f-b33d-0f6937549cc2.jpg',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -711,7 +627,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Air Force 1',
+                                          'ROG Zephyrus',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -743,7 +659,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -776,30 +692,6 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$552.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),
@@ -836,7 +728,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(6.0),
                                   child: Image.network(
-                                    'https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/4b155760-7f13-4feb-8200-c5ec59a1166f/lebron-19-basketball-shoes-VkqHgW.png',
+                                    'https://carisinyal.com/wp-content/uploads/2023/07/Z-flip5-5G_.webp',
                                     width: 80.0,
                                     height: 80.0,
                                     fit: BoxFit.cover,
@@ -854,7 +746,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Lebron 19',
+                                          'Samsung Z Flip',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -886,7 +778,7 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
-                                            'Feb 15, 2022',
+                                            'Feb 15, 2025',
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
@@ -919,30 +811,6 @@ class _TopRatedPageWidgetState extends State<TopRatedPageWidget>
                                       ],
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  '\$59.20',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontStyle,
-                                        ),
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                      ),
                                 ),
                               ],
                             ),

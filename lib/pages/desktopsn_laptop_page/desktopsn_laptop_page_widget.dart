@@ -2,27 +2,27 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'laptop_page_model.dart';
-export 'laptop_page_model.dart';
+import 'desktopsn_laptop_page_model.dart';
+export 'desktopsn_laptop_page_model.dart';
 
-class LaptopPageWidget extends StatefulWidget {
-  const LaptopPageWidget({super.key});
+class DesktopsnLaptopPageWidget extends StatefulWidget {
+  const DesktopsnLaptopPageWidget({super.key});
 
-  static String routeName = 'LaptopPage';
-  static String routePath = '/laptopPage';
+  static String routeName = 'DesktopsnLaptopPage';
+  static String routePath = '/desktopsnLaptopPage';
 
   @override
-  State<LaptopPageWidget> createState() => _LaptopPageWidgetState();
+  State<DesktopsnLaptopPageWidget> createState() =>
+      _DesktopsnLaptopPageWidgetState();
 }
 
-class _LaptopPageWidgetState extends State<LaptopPageWidget>
+class _DesktopsnLaptopPageWidgetState extends State<DesktopsnLaptopPageWidget>
     with TickerProviderStateMixin {
-  late LaptopPageModel _model;
+  late DesktopsnLaptopPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -31,7 +31,7 @@ class _LaptopPageWidgetState extends State<LaptopPageWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => LaptopPageModel());
+    _model = createModel(context, () => DesktopsnLaptopPageModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation': AnimationInfo(
@@ -169,20 +169,11 @@ class _LaptopPageWidgetState extends State<LaptopPageWidget>
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(
-                HomePageWidget.routeName,
-                extra: <String, dynamic>{
-                  kTransitionInfoKey: TransitionInfo(
-                    hasTransition: true,
-                    transitionType: PageTransitionType.rightToLeft,
-                    duration: Duration(milliseconds: 220),
-                  ),
-                },
-              );
+              context.safePop();
             },
           ),
           title: Text(
-            'Laptop',
+            'Desktops & Laptops',
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.interTight(
                     fontWeight:

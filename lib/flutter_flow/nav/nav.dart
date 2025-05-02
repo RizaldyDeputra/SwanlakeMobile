@@ -103,11 +103,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ForgotPasswordWidget(),
         ),
         FFRoute(
-          name: ReviewPageWidget.routeName,
-          path: ReviewPageWidget.routePath,
-          builder: (context, params) => ReviewPageWidget(),
-        ),
-        FFRoute(
           name: ChangePasswordWidget.routeName,
           path: ChangePasswordWidget.routePath,
           builder: (context, params) => ChangePasswordWidget(),
@@ -128,19 +123,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => EditFormWidget(),
         ),
         FFRoute(
-          name: UsernReviewManagementPageWidget.routeName,
-          path: UsernReviewManagementPageWidget.routePath,
-          builder: (context, params) => UsernReviewManagementPageWidget(),
-        ),
-        FFRoute(
           name: AccessoriesPageWidget.routeName,
           path: AccessoriesPageWidget.routePath,
           builder: (context, params) => AccessoriesPageWidget(),
-        ),
-        FFRoute(
-          name: DesktopsnLaptopsPageWidget.routeName,
-          path: DesktopsnLaptopsPageWidget.routePath,
-          builder: (context, params) => DesktopsnLaptopsPageWidget(),
         ),
         FFRoute(
           name: TopRatedPageWidget.routeName,
@@ -180,9 +165,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : SearchPageWidget(),
         ),
         FFRoute(
-          name: LaptopPageWidget.routeName,
-          path: LaptopPageWidget.routePath,
-          builder: (context, params) => LaptopPageWidget(),
+          name: DesktopsnLaptopPageWidget.routeName,
+          path: DesktopsnLaptopPageWidget.routePath,
+          builder: (context, params) => DesktopsnLaptopPageWidget(),
         ),
         FFRoute(
           name: ProfilePageWidget.routeName,
@@ -190,6 +175,26 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'ProfilePage')
               : ProfilePageWidget(),
+        ),
+        FFRoute(
+          name: EditUserPageWidget.routeName,
+          path: EditUserPageWidget.routePath,
+          builder: (context, params) => EditUserPageWidget(),
+        ),
+        FFRoute(
+          name: ReviewPageWidget.routeName,
+          path: ReviewPageWidget.routePath,
+          builder: (context, params) => ReviewPageWidget(),
+        ),
+        FFRoute(
+          name: UsernReviewManagementPageWidget.routeName,
+          path: UsernReviewManagementPageWidget.routePath,
+          builder: (context, params) => UsernReviewManagementPageWidget(),
+        ),
+        FFRoute(
+          name: AddUserPageWidget.routeName,
+          path: AddUserPageWidget.routePath,
+          builder: (context, params) => AddUserPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'latest_release_page_widget.dart' show LatestReleasePageWidget;
 import 'package:flutter/material.dart';
 
